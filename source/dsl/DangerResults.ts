@@ -1,6 +1,7 @@
 import { Violation } from "../dsl/Violation"
 import { MarkdownString } from "../dsl/Aliases"
 
+
 /**
  * The representation of what running a Dangerfile generates.
  *
@@ -23,10 +24,11 @@ export interface DangerResults {
    */
   messages: Violation[]
 
-  /**
-   * Markdown messages to attach at the bottom of the comment
-   */
-  markdowns: MarkdownString[]
+  /*
+  * Markdown messages at the bottom of the comment
+  * @type {Violation[]}
+  */
+  markdowns: Array<Violation>
 }
 
 export interface DangerRuntimeContainer extends DangerResults {

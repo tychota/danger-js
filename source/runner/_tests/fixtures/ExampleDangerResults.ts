@@ -41,3 +41,10 @@ export const asyncResults: DangerResults = {
   messages: [],
   markdowns: [],
 }
+
+export const markdownResults: DangerResults = {
+  fails: [],
+  warnings: [],
+  messages: [],
+  markdowns: [{ message: "Markdown message" }]
+}

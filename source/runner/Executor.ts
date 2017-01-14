@@ -188,6 +188,7 @@ export class Executor {
         console.log("Found only messages, passing those to review.")
       }
       const comment = githubResultsTemplate(results)
+      // TODO filter out Danger items that contain file/line info
       await this.platform.updateOrCreateComment(comment)
     }
 

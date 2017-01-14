@@ -1,3 +1,5 @@
+import { DangerOptions } from "../../runner/Dangerfile"
+
 /**
  * The result of user doing warn, message or fail, built this way for
  * expansion later.
@@ -9,4 +11,6 @@ export interface Violation {
    * @type {string}
    */
   message: string
+
+  options?: DangerOptions
 }
